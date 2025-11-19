@@ -1,4 +1,4 @@
-adminID;operatorGattung;operatorLong_DB;verkehrsvertrag;operatorShort_manual;operatorLong_manual;comment
+adminID;DB_operator_code;DB_operator_name;DB_subnet_name;custom_short_name;custom_long_name;comment
 8;S;S-Bahn Berlin;;;;
 19;EST;EUROSTAR;;;;
 51;PKP;PKP Intercity;;;;
@@ -18,8 +18,8 @@ adminID;operatorGattung;operatorLong_DB;verkehrsvertrag;operatorShort_manual;ope
 85;SBB;SBB;;;;
 86;DSB;Dänische Staatsbahnen;;;;
 87;SCF;SNCF;;;;
-88;SCB;SNCB;;;;
-3018;THA;THALYS;;;;
+88;SCB;SNCB;Belgische Eisenbahnen;;;
+3018;THA;THALYS;Eurostar (ex. Thalys);;;
 3189;ARV;ARRIVA vlaky;;;;
 3230;VBG;vogtlandbahn - Die Länderbahn GmbH DLB;;;;
 3236;WB;WESTbahn;;;;
@@ -52,15 +52,15 @@ adminID;operatorGattung;operatorLong_DB;verkehrsvertrag;operatorShort_manual;ope
 800293;DB;DB Regio AG Nord;;;;
 800295;DB;DB Regio AG Nord;;;;
 800310;DB;DB Regio AG NRW;;;;
-800318;DB;DB Arriva;;;;
-800333;DB;DB Regio AG NRW;;;;
-800337;DB;DB Regio AG NRW;;;;
-800338;DB;DB Regio AG NRW;;;;
-800348;DB;DB Regio AG NRW;;;;
-800349;DB;DB Regio AG NRW;;;;
-800351;DB;DB Regio AG NRW;;;;
-800352;DB;DB Regio AG NRW;;;;
-800354;DB;DB Regio AG NRW;;;;
+800318;DB;DB Arriva;DB Arriva;;;
+800333;DB;DB Regio AG NRW;DB Regio NW, RB 33;;;
+800337;DB;DB Regio AG NRW;DB Regio NW, S-Bahn Rhein-Ruhr;;;S1,
+800338;DB;DB Regio AG NRW;DB Regio NW, KR Rhein-Sieg-Express;;;
+800348;DB;DB Regio AG NRW;DB Regio NW, WF Sauerlandnetz (Los 2);;;RB53,RB43,RB52,RE57
+800349;DB;DB Regio AG NRW;DB Regio NW, EN Haardachse;;;RE2,
+800351;DB;DB Regio AG NRW;DB Regio NW, WR Westl. Münsterland (RB51);;;
+800352;DB;DB Regio AG NRW;DB Regio NW, KR Köln (Dieselnetz);;;vareo-Dieselnetz
+800354;DB;DB Regio AG NRW;DB Regio NW, RR (S5/S8);;;
 800363;DB;DB Regio AG NRW;;;;
 800413;DB;DB Regio AG Südost;;;;
 800417;DB;DB Regio AG Südost;;;;
@@ -83,7 +83,7 @@ adminID;operatorGattung;operatorLong_DB;verkehrsvertrag;operatorShort_manual;ope
 800622;DB;DB Regio AG Baden-Württemberg;;;;
 800631;DB;DB Regio AG Baden-Württemberg;;;;
 800632;DB;DB Regio AG Baden-Württemberg;;;;
-800640;SWX;DB Regio AG Mitte SÜWEX;;;;
+800640;SWX;DB Regio AG Mitte SÜWEX;DB Regio MI, SÜWEX;;;auch IC 5107
 800643;S;DB Regio AG S-Bahn Stuttgart;;;;
 800647;DB;DB Regio AG Baden-Württemberg;;;;
 800659;DB;DB Regio AG Baden-Württemberg;;;;
@@ -97,16 +97,16 @@ adminID;operatorGattung;operatorLong_DB;verkehrsvertrag;operatorShort_manual;ope
 800742;DB;DB Regio AG Bayern;;;;
 800746;DB;DB Regio AG Bayern;;;;
 800755;DB;DB Regio AG Bayern;;;;
-800759;DB;DB Regio AG Bayern;;;;
+800759;DB;DB Regio AG Bayern;DB Regio BY, Nordbayern (NeiTech);;;
 800765;DB;DB Regio AG Bayern;;;;
-800767;DB;DB Regio AG Bayern;;;;
+800767;DB;DB Regio AG Bayern;DB Regio BY, München-Passau;;;RE3, RE22, RB33
 800772;DB;DB Regio AG Bayern;;;;
 800785;DB;DB Regio AG Bayern;;;;
 800790;DB;DB Regio AG Bayern;;;;
-801512;DB;DB Regio AG Mitte;;;;
+801512;DB;DB Regio AG Mitte;DB Regio MI, MoselLux;;;RB81,
 801513;DB;DB Regio AG Mitte;;;;
 801518;DB;DB Regio AG Mitte;;;;
-801526;DB;DB Regio AG Mitte;;;;
+801526;DB;DB Regio AG Mitte;DB Regio MI, Lahn-Eifel-Bahn;;;RE25,RB23,RB38
 801539;DB;DB Regio AG Mitte;;;;
 801566;DB;DB Regio AG Mitte;;;;
 801591;DB;DB Regio AG Mitte;;;;
@@ -189,16 +189,19 @@ adminID;operatorGattung;operatorLong_DB;verkehrsvertrag;operatorShort_manual;ope
 51PR-Q;PR;Polregio;;;;
 51PR-R;PR;Polregio;;;;
 51PR-S;PR;Polregio;;;;
+54A8N;CD;Tschechische Bahnen;Tschechische Bahnen;;;RE25,
 8002A3;DB;DB Regio AG Nord;;;;
 8002B5;DB;DB Regio AG Nord;;;;
-8003A5;DB;DB Regio AG NRW;;;;
-8003G1;DB;DB Regio AG NRW;;;;
-8003G2;DB;DB Regio AG NRW;;;;
-8003H5;DB;DB Regio AG NRW;;;;
-8003L1;DB;DB Regio AG NRW;;;;
-8003L2;DB;DB Regio AG NRW;;;;
+8003A5;DB;DB Regio AG NRW;DB Regio NW, EN euregiobahn;;;
+8003B2;DB;DB Regio AG NRW;Busse/SEV Region NRW;;;SEV RB27 Koblenz - Neuwied,
+8003G1;DB;DB Regio AG NRW;DB Regio NW, Erftbahn (RB 38Süd);;;
+8003G2;DB;DB Regio AG NRW;DB Regio NW, TN RE 8;;;
+8003H5;DB;DB Regio AG NRW;DB Regio NW, TN Interim RB27;;;
+8003L1;DB;DB Regio AG NRW;DB Regio NW, Teilnetz S-Bahn Rhein-Ruhr;;;S2,S9,RB32,RE49,
+8003L2;DB;DB Regio AG NRW;DB Regio NW, Teilnetz Ruhr-Sieg-Netz;;;RE34,
+8003RA;DB;;Rhein-Mosel-Bus Ahrweiler (SEV);;;
 8003RL;DB;DB Regio AG NRW;;;;
-8003S;DB;DB Regio AG NRW;;;;
+8003S;DB;DB Regio AG NRW;DB Regio NW, KR (Altvertrag S-Bahn);;;
 8004A9;DB;DB Regio AG Südost;;;;
 8004L1;DB;DB Regio AG Südost;;;;
 8004NT;DB;DB Regio AG Südost;;;;
@@ -207,7 +210,7 @@ adminID;operatorGattung;operatorLong_DB;verkehrsvertrag;operatorShort_manual;ope
 8005KG;DB;DB Regio AG Mitte;;;;
 8005MW;DB;DB Regio AG Mitte;;;;
 8005ND;DB;DB Regio AG Mitte;;;;
-8005SV;DB;Rhein-Mosel-Bus Ahrweiler;;;;
+8005SV;DB;Rhein-Mosel-Bus Ahrweiler;DB Regio MI, SEV;;;Bus RB23,
 8006A7;WFB;DB RegioNetz Verkehrs GmbH Westfrankenbahn;;;;
 8006C4;DB;DB Regio AG Baden-Württemberg;;;;
 8006C5;DB;DB Regio AG Baden-Württemberg;;;;
@@ -222,7 +225,8 @@ adminID;operatorGattung;operatorLong_DB;verkehrsvertrag;operatorShort_manual;ope
 8007DU;DB;DB Regio AG Bayern;;;;
 8007H1;DB;DB Regio AG Bayern;;;;
 8007H2;DB;DB Regio AG Bayern;;;;
-8013D;SOB;DB RegioNetz Verkehrs GmbH Südostbayernbahn;;;;
+8007H3;DB;DB Regio AG Bayern;DB Regio BY, TN Expressverkehr Ostbayern;;;RE2
+8013D;SOB;DB RegioNetz Verkehrs GmbH Südostbayernbahn;DB Regio RNV, Südostbayernbahn (D-Traktion);;;Auch Bus RB46
 8013E;SOB;DB RegioNetz Verkehrs GmbH Südostbayernbahn;;;;
 8015A1;DB;DB Regio AG Mitte;;;;
 8015A6;DB;DB Regio AG Mitte;;;;
@@ -235,7 +239,7 @@ adminID;operatorGattung;operatorLong_DB;verkehrsvertrag;operatorShort_manual;ope
 857LEX;LEX;LEX;;;;
 85DBSH;SBB;SBB;;;;
 A0;AKN;AKN Eisenbahn GmbH;;;;
-A5;VEN;Rhenus Veniro;;;;
+A5;VEN;Rhenus Veniro;Transdev;;;RB85,
 A6;AVG;Albtal-Verkehrs-Gesellschaft mbH;;;;
 A6FEX;DPN;Nahreisezug;;;;
 A6S1;AVG;Albtal-Verkehrs-Gesellschaft mbH;;;;
@@ -255,13 +259,13 @@ A6S7;AVG;Albtal-Verkehrs-Gesellschaft mbH;;;;
 A6S71;AVG;Albtal-Verkehrs-Gesellschaft mbH;;;;
 A6S8;AVG;Albtal-Verkehrs-Gesellschaft mbH;;;;
 A6S81;AVG;Albtal-Verkehrs-Gesellschaft mbH;;;;
-A8N;ALX;alex - Die Länderbahn GmbH DLB;;;;
-A9;ag;agilis;;;;
+A8N;ALX;alex - Die Länderbahn GmbH DLB;alex - Die Länderbahn GmbH DLB (Nord);;;RE23,RE25
+A9;ag;agilis;agilis (RB);;;RB97,RB98,RB99, ...
 aav006;DPN;Nahreisezug;;;;
 aavARN;DPN;Nahreisezug;;;;
-aavARR;DPN;Nahreisezug;;;;
-aavASE;DPN;Nahreisezug;;;;
-aavDKB;DPN;Nahreisezug;;;;
+aavARR;DPN;Nahreisezug;;;Arriva Nederland;Bus 350 Maastricht - Aachen
+aavASE;DPN;Nahreisezug;;ASEAG;Aachener Straßenbahn und Energieversorgungs-AG;
+aavDKB;DPN;Nahreisezug;;Rurtalbus;Rurtalbus GmbH;
 aavNET;DPN;Nahreisezug;;;;
 aavTEC;DPN;Nahreisezug;;;;
 AB;ABR;SWEG Bahn Stuttgart GmbH;;;;
@@ -324,13 +328,13 @@ avv009;DPN;Nahreisezug;;;;
 avvBus;DPN;Nahreisezug;;;;
 B1;DB;DB Regio AG Nord;;;;
 B1EDZ;DPN;Nahreisezug;;;;
-B2;DB;DB Regio AG NRW;;;;
+B2;DB;DB Regio AG NRW;Busse/SEV Region NRW;;;
 B3;P;Brohltalbahn;;;;
 B4;S;DB Regio AG S-Bahn Rhein-Main;;;;
 B5;DB;DB Regio AG Mitte;;;;
 B6;DB;DB Regio AG Baden-Württemberg;;;;
-B7;DPN;Nahreisezug;;;;
-bacBus;DPN;Nahreisezug;;;;
+B7;DPN;Nahreisezug;Busse/SEV Region Bayern;;;Bus EV NMR - Cheb, Bus EV Nürnberg - Bayreuth,
+bacBus;DPN;Nahreisezug;;;Verkehrsbetriebe Bachstein GmbH;VGN 1545,1566,1573,1574 (eigentlich RBO?)
 bambus;DPN;Nahreisezug;;;;
 bayaut;DPN;Nahreisezug;;;;
 BB;DB;DB Regio AG Nordost;;;;
@@ -355,11 +359,11 @@ bod020;DPN;Nahreisezug;;;;
 bod031;DPN;Nahreisezug;;;;
 BurBus;DPN;Nahreisezug;;;;
 BW;DB;DB Regio AG Nordost;;;;
-byr001;DPN;Nahreisezug;;;;
+byr001;DPN;Nahreisezug;;Stadtwerke Bayreuth;Stadtwerke Bayreuth Verkehr- und Bäder GmbH;
 C6;KTB;Kandertalbahn;;;;
 C8;LEO;Chiemgauer Lokalbahn;;;;
 CD;CB;City-Bahn Chemnitz;;;;
-cha016;DPN;Nahreisezug;;;;
+cha016;DPN;Nahreisezug;;;Stadtwerke Cham GmbH;Durchgeführt von Omnibusunternehmen Johannes Baumgartner e.K. (Rufbusse Cham)
 cobBus;DPN;Nahreisezug;;;;
 css002;P;Chiemseebahn;;;;
 csscss;DPN;Nahreisezug;;;;
@@ -367,14 +371,14 @@ cw001;DPN;Nahreisezug;;;;
 cw010;DPN;Nahreisezug;;;;
 CX;MRB;Mitteldeutsche Regiobahn;;;;
 CXRB;RB;Mitteldeutsche Regiobahn;;;;
-CXRE;RE;Mitteldeutsche Regiobahn;;;;
-D3;RTB;Rurtalbahn;;;;
+CXRE;RE;Mitteldeutsche Regiobahn;Transdev Mitteldeutschland GmbH (RE);;;RE3,
+D3;RTB;Rurtalbahn;Rurtalbahn GmbH;;;
 daf005;DPN;Nahreisezug;;;;
 dgfBus;DPN;Nahreisezug;;;;
 drbBUS;DPN;Nahreisezug;;;;
 E0;EVB;EVB ELBE-WESER GmbH;;;;
 E3;P;Kasbachtalbahn;;;;
-EB;RB;Erfurter Bahn GmbH;;;;
+EB;RB;Erfurter Bahn GmbH;Erfurter Bahn GmbH (RB);;;
 ED;FEG;Freiberger Eisenbahngesellschaft;;;;
 estbus;DPN;Nahreisezug;;;;
 etgBus;DPN;Nahreisezug;;;;
@@ -384,13 +388,13 @@ F7;RB;Bodensee-Oberschwaben-Bahn;;;;
 fds002;DPN;Nahreisezug;;;;
 fdsBus;DPN;Nahreisezug;;;;
 FisBus;DPN;Nahreisezug;;;;
-FLX10;FLX;FlixTrain;;;;
-FLX11;FLX;FlixTrain;;;;
-FLX15;FLX;FlixTrain;;;;
-FLX20;FLX;FlixTrain;;;;
-FLX30;FLX;FlixTrain;;;;
-FLX35;FLX;FlixTrain;;;;
-frg001;DPN;Nahreisezug;;;;
+FLX10;FLX;FlixTrain;FlixTrain (FLX10);;;
+FLX11;FLX;FlixTrain;FlixTrain (FLX11);;;
+FLX15;FLX;FlixTrain;FlixTrain (FLX15);;;
+FLX20;FLX;FlixTrain;FlixTrain (FLX20);;;
+FLX30;FLX;FlixTrain;FlixTrain (FLX30);;;
+FLX35;FLX;FlixTrain;FlixTrain (FLX35);;;
+frg001;DPN;Nahreisezug;;;;Bus 100 Passau 'Pra' (Brunnhölzl GmbH, Verbundtarif Donau/Wald)
 fuebus;DPN;Nahreisezug;;;;
 fwzBus;DPN;Nahreisezug;;;;
 GA;GA;Go-Ahead Baden-Württemberg GmbH;;;;
@@ -401,9 +405,9 @@ GARE;RE;Go-Ahead Baden-Württemberg GmbH;;;;
 ge2GEV;DPN;Nahreisezug;;;;
 ge3GEV;DPN;Nahreisezug;;;;
 geiBus;DPN;Nahreisezug;;;;
-gf2001;DPN;Nahreisezug;;;;
+gf2001;DPN;Nahreisezug;;;Stadtwerke Cham GmbH;Durchgeführt von Omnibusunternehmen Johannes Baumgartner e.K.
 gfn011;DPN;Nahreisezug;;;;
-gfn012;DPN;Nahreisezug;;;;
+gfn012;DPN;Nahreisezug;;RBO;Regionalbus Ostbayern GmbH;41 Regensburg - Schwandorf,
 gfn015;DPN;Nahreisezug;;;;
 gfn020;DPN;Nahreisezug;;;;
 ghuBus;DPN;Nahreisezug;;;;
@@ -420,7 +424,7 @@ hnv030;DPN;Nahreisezug;;;;
 hnv031;DPN;Nahreisezug;;;;
 hnv034;DPN;Nahreisezug;;;;
 hnv050;DPN;Nahreisezug;;;;
-hof004;DPN;Nahreisezug;;;;
+hof004;DPN;Nahreisezug;;HofBus;HofBus GmbH;
 hvv001;DPN;Nahreisezug;;;;
 hvvDAH;DPN;Nahreisezug;;;;
 hvvHAD;DPN;Nahreisezug;;;;
@@ -435,7 +439,7 @@ hvvVLP;DPN;Nahreisezug;;;;
 invBus;DPN;Nahreisezug;;;;
 K4;HLB;HLB Hessenbahn GmbH;;;;
 K4RB;HLB;HLB Hessenbahn GmbH;;;;
-K4RE;HLB;HLB Hessenbahn GmbH;;;;
+K4RE;HLB;HLB Hessenbahn GmbH;Hessische Landesbahn (RE);Hessische Landesbahn;Hessische Landesbahn GmbH;RE34,
 K6;AVG;Albtal-Verkehrs-Gesellschaft mbH;;;;
 KD;KD;Köln-Düsseldorfer Deutsche Rheinschifffahrt GmbH;;;;
 kis001;DPN;Nahreisezug;;;;
@@ -467,11 +471,11 @@ L7;SBB;SBB GmbH;;;;
 L8;BRB;Bayerische Regiobahn;;;;
 lamBus;DPN;Nahreisezug;;;;
 lanGEV;DPN;Nahreisezug;;;;
-LD;TL;trilex  - Die Länderbahn GmbH DLB;;;;
+LD;TL;trilex ;;;;
 LDTLX;TLX;trilex-express - Die Länderbahn GmbH DLB;;;;
-lklGEV;DPN;Nahreisezug;;;;
+lklGEV;DPN;Nahreisezug;;;;Landshut: 301, 318 (Weingartner Reisen e.K.), 307 (Omnibusse Richard Petz GmbH)
 M1;P;Museumsbahn;;;;
-M2;S;REGIOBAHN;;;;
+M2;S;REGIOBAHN;REGIOBAHN;;;Bus RE47X,
 M2RE;R;REGIOBAHN;;;;
 M4;VSE;Verein Sächsischer Eisenbahnfreunde;;;;
 M8;BRB;Bayerische Regiobahn;;;;
@@ -539,14 +543,14 @@ NBRB63;RB;NEB Niederbarnimer Eisenbahn;;;;
 nvpBUS;DPN;Nahreisezug;;;;
 NWBus;NWB;NordWestBahn;;;;
 NX;NX;National Express;;;;
-NXRB;RB;National Express;;;;
-NXRE;RE;National Express;;;;
+NXRB;RB;National Express;NX Rail (RB)   (National Express Rail);;;RB48
+NXRE;RE;National Express;NX Rail (RE)   (National Express Rail);;;RE1, RE4, RE5, RE7,
 NY;MSM;MSM Partyzug;;;;
 NYUEX;UEX;Urlaubs-Express;;;;
-NZ;RE;DB Fernverkehr AG;;;;
+NZ;RE;DB Fernverkehr AG;;;;Nahverkehrsfreigaben von DB FV (z. B. IC Borkum, RE34,) + Ersatzzugnummern von DB FV
 O0;NBE;Nordbahn Eisenbahngesellschaft;;;;
 O7;ÖBA;Öchsle-Bahn-Betriebsgesellschaft mbH;;;;
-O9;OPB;oberpfalzbahn - Die Länderbahn GmbH DLB;;;;
+O9;OPB;oberpfalzbahn - Die Länderbahn GmbH DLB;oberpfalzbahn - Die Länderbahn GmbH DLB;;;RB23,RB27,
 O9X;OPX;oberpfalz-express - Die Länderbahn GmbH DLB;;;;
 OD;SOE;Sächsisch-Oberlausitzer Eisenbahngesellschaft;;;;
 omp001;DPN;Nahreisezug;;;;
@@ -598,7 +602,8 @@ omsBus;DPN;Nahreisezug;;;;
 ova002;DPN;Nahreisezug;;;;
 ova035;DPN;Nahreisezug;;;;
 ovaOVA;DPN;Nahreisezug;;;;
-ovfOVF;DPN;Nahreisezug;;;;
+ovfBAY:DPN;Nahreisezug;;RBO;Regionalbus Ostbayern GmbH;Bus 6148 Passau (Verbundtarif Donau/Wald)
+ovfOVF;DPN;Nahreisezug;;OVF;Omnibusverkehr Franken GmbH;VGN 369 (eigentlich Heserbus?),1338,RUF 1339,1367,
 OWBus;OE;Ostdeutsche Eisenbahn GmbH;;;;
 owl020;DPN;Nahreisezug;;;;
 owl021;DPN;Nahreisezug;;;;
@@ -648,18 +653,19 @@ pbaKB;ÖPO;ÖBB-Postbus;;;;
 pbaVVT;DPN;Nahreisezug;;;;
 pbaW3;DPN;Nahreisezug;;;;
 pbaWR;ÖPO;ÖBB-Postbus;;;;
+pfaBus;DPN;Nahreisezug;;;Alois Pfeffer e.K.;Bus 200 Passau
 prg091;DPN;Nahreisezug;;;;
 R0;ENO;enno;;;;
 R1;ME;metronom;;;;
 R2;ERB;eurobahn;;;;
-R2RB;RB;eurobahn;;;;
-R2RE;RE;eurobahn;;;;
+R2RB;RB;eurobahn;eurobahn (RB);;;RB59,
+R2RE;RE;eurobahn;eurobahn (RE);;;RE3,RE13,
 R4;VIA;VIAS Rail GmbH;;;;
-R4NRN;VIA;VIAS Rail GmbH;;;;
+R4NRN;VIA;VIAS Rail GmbH;VIAS Rail GmbH (NRN);;;Niederrhein-Netz (RE19,)
 R4RB35;VIA;VIAS Rail GmbH;;;;
-R4RH;VIA;VIAS GmbH;;;;
+R4RH;VIA;VIAS GmbH;VIAS GmbH;;;RB10,
 R4S7;VIA;VIAS Rail GmbH;;;;
-R4WEST;VIA;VIAS Rail GmbH;;;;
+R4WEST;VIA;VIAS Rail GmbH;VIAS Rail GmbH West;VIAS;VIAS GmbH;
 R7;HzL;Hohenzollerische Landesbahn (SWEG);;;;
 rabRAB;RAB;Regionalverkehr Alb-Bodensee;;;;
 rbgAST;SBG;Südbadenbus;;;;
@@ -678,12 +684,12 @@ rbgRVS;RVS;Südwestbus;;;;
 rbgRVs;RVS;Südwestbus;;;;
 rbgSBG;SBG;Südbadenbus;;;;
 rbgWMR;DPN;Nahreisezug;;;;
-rboMB;DPN;Nahreisezug;;;;
+rboMB;DPN;Nahreisezug;;RBO;Regionalbus Ostbayern GmbH;Alle Niederlassungen
 rbpORN;ORN;ORN Omnibusverkehr Rhein-Nahe GmbH (Rhein-Nahe-Bus);;;;
-rbpRMA;DB;Rhein-Mosel-Bus Ahrweiler;;;;
-rbpRMB;DB;RMB Rhein-Mosel-Bus;;;;
+rbpRMA;DB;Rhein-Mosel-Bus Ahrweiler;Rhein-Mosel-Bus Ahrweiler;;;
+rbpRMB;DB;RMB Rhein-Mosel-Bus;;;DB Regio Bus Rhein-Mosel GmbH;1,11,515,670 (eigentlich  DB Regio Bus Mitte GmbH),
 rbpRPB;RPB;Rheinpfalzbus;;;;
-rbpRU1;DPN;Nahreisezug;;;;
+rbpRU1;DPN;Nahreisezug;;;DB Regio Bus Rhein-Mosel GmbH;AST 853,AST 869,
 rbpRU2;DPN;Nahreisezug;;;;
 rbpSAA;DPN;Nahreisezug;;;;
 rbpSWM;DB;DB Regio Bus Mitte;;;;
@@ -696,7 +702,7 @@ rbrSBE;DPN;Nahreisezug;;;;
 rbrSEV;DPN;Nahreisezug;;;;
 rbrSNB;DPN;Nahreisezug;;;;
 RC;AZS;AUTOZUG Sylt;;;;
-RD;VBG;vogtlandbahn - Die Länderbahn GmbH DLB;;;;
+RD;VBG;vogtlandbahn - Die Länderbahn GmbH DLB;Vogtlandbahn - Die Länderbahn GmbH DLB;;;
 rmbwug;DPN;Nahreisezug;;;;
 rmpREB;DPN;Nahreisezug;;;;
 rmpRSG;DPN;Nahreisezug;;;;
@@ -708,7 +714,7 @@ rmtGVB;DPN;Nahreisezug;;;;
 rmtIOV;DPN;Nahreisezug;;;;
 rmtJES;DPN;Nahreisezug;;;;
 rmtJNV;DPN;Nahreisezug;;;;
-rmtKOM;DPN;Nahreisezug;;;;
+rmtKOM;DPN;Nahreisezug;;KomBus;KomBus GmbH;VGN 1566,
 rmtLWW;DPN;Nahreisezug;;;;
 rmtMBB;DPN;Nahreisezug;;;;
 rmtMKI;DPN;Nahreisezug;;;;
@@ -872,13 +878,13 @@ rvvRVV;DPN;Nahreisezug;;;;
 RW;PRE;Pressnitztalbahn;;;;
 S0;DPN;Nahreisezug;;;;
 S1;DPN;Nahreisezug;;;;
-S3;SWB;Stadtwerke Bonn;;;;
+S3;SWB;Stadtwerke Bonn;Stadtwerke Bonn;SSB;Elektrische Bahnen der Stadt Bonn und des Rhein-Sieg-Kreises GmbH;66,67
 S6;SWE;SWEG Südwestdeutsche Landesverkehrs-GmbH;;;;
 S7;DPN;Nahreisezug;;;;
-S9;ag;agilis;;;;
+S9;ag;agilis;agilis (RE);;;RE22,
 SAB;SAB;Schwäbische Alb-Bahn;;;;
 SAD003;SAD;Vinschgaubahn;;;;
-sadBUS;DPN;Nahreisezug;;;;
+sadBUS;DPN;Nahreisezug;;;Schmid Faszinatour GmbH & Co. KG;Stadtverkehr Schwandorf + Überlandlinien 105,106,108,109,110
 SB;RB;Süd-Thüringen-Bahn GmbH;;;;
 sbpMU;DPN;Nahreisezug;;;;
 sbpRW;DPN;Nahreisezug;;;;
@@ -896,6 +902,7 @@ smrRfb;DPN;Nahreisezug;;;;
 snp001;DPN;Nahreisezug;;;;
 snp002;DPN;Nahreisezug;;;;
 spaBus;DPN;Nahreisezug;;;;
+srg001;DPN;Nahreisezug;;;;Bus 201 Passau 'Siegh' (Sieghart Bus GmbH, Busverkehr Nationalpark-Ilzer Land, Verbundtarif Donau/Wald)
 srlBus;DPN;Nahreisezug;;;;
 sswssw;DPN;Nahreisezug;;;;
 sva006;DPN;Nahreisezug;;;;
@@ -905,11 +912,11 @@ svr001;DPN;Nahreisezug;;;;
 SW;DPN;Nahreisezug;;;;
 swg099;SWE;SWEG Südwestdeutsche Landesverkehrs-GmbH;;;;
 swgSWB;DPN;Nahreisezug;;;;
-swlbus;DPN;Nahreisezug;;;;
+swlbus;DPN;Nahreisezug;;STWLA;Stadtwerke Landshut;
 swm001;DPN;Nahreisezug;;;;
 swm002;DPN;Nahreisezug;;;;
 swm003;DPN;Nahreisezug;;;;
-swpVBP;DPN;Nahreisezug;;;;
+swpVBP;DPN;Nahreisezug;;VBP;Verkehrsbetriebsgesellschaft Passau mbH;Stadtwerke Passau GmbH
 swt_31;DPN;Nahreisezug;;;;
 swt_32;DPN;Nahreisezug;;;;
 swt_33;DPN;Nahreisezug;;;;
@@ -929,7 +936,7 @@ swt024;DPN;Nahreisezug;;;;
 swt025;DPN;Nahreisezug;;;;
 swt026;DPN;Nahreisezug;;;;
 swt028;DPN;Nahreisezug;;;;
-swt030;DPN;Nahreisezug;;;;
+swt030;DPN;Nahreisezug;;;bkr mobility GmbH;355,
 swt031;DPN;Nahreisezug;;;;
 swt032;DPN;Nahreisezug;;;;
 swt033;DPN;Nahreisezug;;;;
@@ -948,7 +955,7 @@ swtb27;DPN;Nahreisezug;;;;
 swtb29;DPN;Nahreisezug;;;;
 T8;BRB;Bayerische Regiobahn;;;;
 TDHS;S;S-Bahn Hannover (Transdev);;;;
-TDRR;RRB;RheinRuhrBahn (Transdev);;;;
+TDRR;RRB;RheinRuhrBahn (Transdev);RheinRuhrBahn (Transdev);;;S7,
 tgo099;SWE;SWEG Südwestdeutsche Landesverkehrs-GmbH;;;;
 TR;RB;MittelrheinBahn (Trans Regio);;;;
 TRI;TRI;TRI Train Rental GmbH;;;;
@@ -990,7 +997,7 @@ tut001;DPN;Nahreisezug;;;;
 UW;UBB;Usedomer Bäderbahn;;;;
 V6;vlx;vlexx;;;;
 V6RB;RB;vlexx;;;;
-V6RE;RE;vlexx;;;;
+V6RE;RE;vlexx;vlexx (RE);;;RE2,
 V7;SVG;SVG Schienenverkehrsgesellschaft Stuttgart;;;;
 V9;P;Wanderbahn im Regental;;;;
 vabsta;DPN;Nahreisezug;;;;
@@ -1063,14 +1070,14 @@ vgm044;DPN;Nahreisezug;;;;
 vgm045;DPN;Nahreisezug;;;;
 vgm046;DPN;Nahreisezug;;;;
 vgm047;DPN;Nahreisezug;;;;
-vgm050;DPN;Nahreisezug;;;;
+vgm050;DPN;Nahreisezug;;VKU;Verkehrsgesellschaft Kreis Unna mbH;S30,
 vgm051;DPN;Nahreisezug;;;;
 vgm053;DPN;Nahreisezug;;;;
 vgm060;DPN;Nahreisezug;;;;
 vgm079;DPN;Nahreisezug;;;;
 vgm092;DPN;Nahreisezug;;;;
 vgm093;WB;Westfalenbus;;;;
-vgm094;DPN;Nahreisezug;;;;
+vgm094;DPN;Nahreisezug;;WB;Westfalen Bus GmbH;55,
 vgmb93;WB;Westfalenbus;;;;
 vgn_16;DPN;Nahreisezug;;;;
 vgn043;DPN;Nahreisezug;;;;
@@ -1078,7 +1085,7 @@ vgn061;DPN;Nahreisezug;;;;
 vgn063;DPN;Nahreisezug;;;;
 vgn065;DPN;Nahreisezug;;;;
 vgn068;DPN;Nahreisezug;;;;
-vgn083;DPN;Nahreisezug;;;;
+vgn083;DPN;Nahreisezug;;;Siegfried Hammon OHG;370,
 vgsARG;DPN;Nahreisezug;;;;
 vgsBar;DPN;Nahreisezug;;;;
 vgsBTV;DPN;Nahreisezug;;;;
@@ -1186,36 +1193,41 @@ vph081;DPN;Nahreisezug;;;;
 vph082;DPN;Nahreisezug;;;;
 vpo099;DPN;Nahreisezug;;;;
 vrm002;DPN;Nahreisezug;;;;
+vrm004;DPN;Nahreisezug;;;;710,720 (bkr-mobility & DB Regio Bus Mitte & Scherer Reisen)?
 vrm005;DPN;Nahreisezug;;;;
-vrm006;DPN;Nahreisezug;;;;
+vrm006;DPN;Nahreisezug;;Griesar Reisen;Griesar Reisen GmbH;419,460,485,
 vrm007;DPN;Nahreisezug;;;;
 vrm008;DPN;Nahreisezug;;;;
-vrm009;DPN;Nahreisezug;;;;
+vrm009;DPN;Nahreisezug;;Bischoff-Touristik;Bischoff-Touristik GmbH & Co. KG;128,170,
+vrm010;DPN;Nahreisezug;;;;750 (bkr-mobility & Scherer Reisen)?,
 vrm011;DPN;Nahreisezug;;;;
+vrm012;DPN;Nahreisezug;;Gilles Personenschifffahrt;Personenschifffahrt Gilles GmbH;Ehrenbreitstein - Koblenz (F10)
 vrm014;DPN;Nahreisezug;;;;
 vrm015;DPN;Nahreisezug;;;;
 vrm016;DPN;Nahreisezug;;;;
 vrm017;DPN;Nahreisezug;;;;
-vrm019;DPN;Nahreisezug;;;;
+vrm018;DPN;Nahreisezug;;;Dillschnitter GmbH und Co. KG;150
+vrm019;DPN;Nahreisezug;;;Rheinfähre Linz-Kripp GmbH;Remagen - Erpel (F21),Linz - Kripp (F22)
 vrm020;DPN;Nahreisezug;;;;
-vrm025;DPN;Nahreisezug;;;;
-vrm031;DPN;Nahreisezug;;;;
-vrm032;DPN;Nahreisezug;;;;
-vrm036;DPN;Nahreisezug;;;;
+vrm025;DPN;Nahreisezug;;;Fährgemeinschaft Kaub GbR;Kaub - Oberwesel Engelsburg (F51)
+vrm031;DPN;Nahreisezug;;koveb;Koblenzer Verkehrsbetriebe GmbH;
+vrm032;DPN;Nahreisezug;;Verkehrsbetriebe Mittelrhein;Ahrweiler Verkehrs GmbH;(AWV)
+vrm036;DPN;Nahreisezug;;Martin Becker;Martin Becker GmbH & Co. KG;
+vrm039;DPN;Nahreisezug;;RSVG;Rhein-Sieg-Verkehrsgesellschaft mbH;176,179,180,
 vrm061;DPN;Nahreisezug;;;;
 vrm066;DPN;Nahreisezug;;;;
 vrm067;DPN;Nahreisezug;;;;
 vrm068;DPN;Nahreisezug;;;;
 vrm069;DPN;Nahreisezug;;;;
-vrm070;DPN;Nahreisezug;;;;
+vrm070;DPN;Nahreisezug;;Scherer Reisen;SVG Scherer Verkehrs GmbH;670,681,682,683,688,689,
 vrm072;DPN;Nahreisezug;;;;
 vrm073;DPN;Nahreisezug;;;;
 vrm074;DPN;Nahreisezug;;;;
 vrm077;DPN;Nahreisezug;;;;
-vrm078;DPN;Nahreisezug;;;;
+vrm078;DPN;Nahreisezug;;;KVG Zickenheiner GmbH;
 vrm083;DPN;Nahreisezug;;;;
-vrm084;DPN;Nahreisezug;;;;
-vrm085;DPN;Nahreisezug;;;;
+vrm084;DPN;Nahreisezug;;Verkehrsbetriebe Mittelrhein;Verkehrsbetrieb Rhein-Eifel-Mosel GmbH;(VREM)
+vrm085;DPN;Nahreisezug;;VRW;Verkehrsbetrieb Rhein-Westerwald GmbH;110,
 vrn008;STR;Rhein-Neckar-Verkehr GmbH;;;;
 vrn011;STR;Rhein-Neckar-Verkehr GmbH;;;;
 vrn016;DPN;Nahreisezug;;;;
@@ -1265,9 +1277,9 @@ vrr011;DPN;Nahreisezug;;;;
 vrr012;DPN;Nahreisezug;;;;
 vrr013;DPN;Nahreisezug;;;;
 vrr015;DPN;Nahreisezug;;;;
-vrr016;DPN;Nahreisezug;;;;
-vrr018;DPN;Nahreisezug;;;;
-vrr020;DPN;Nahreisezug;;;;
+vrr016;DPN;Nahreisezug;;;Stadtwerke Remscheid GmbH;
+vrr018;DPN;Nahreisezug;;;Stadtwerke Solingen GmbH;
+vrr020;DPN;Nahreisezug;;DVG;Duisburger Verkehrsgesellschaft AG;U79
 vrr021;DPN;Nahreisezug;;;;
 vrr023;DPN;Nahreisezug;;;;
 vrr025;DPN;Nahreisezug;;;;
@@ -1278,45 +1290,46 @@ vrr032;DPN;Nahreisezug;;;;
 vrr033;DPN;Nahreisezug;;;;
 vrr034;DPN;Nahreisezug;;;;
 vrr035;DPN;Nahreisezug;;;;
-vrr036;DPN;Nahreisezug;;;;
+vrr036;DPN;Nahreisezug;;DSW21;Dortmunder Stadtwerke AG;U-Bahn
 vrr037;DPN;Nahreisezug;;;;
-vrr038;DPN;Nahreisezug;;;;
+vrr038;DPN;Nahreisezug;;DSW21;Dortmunder Stadtwerke AG;Busse
 vrr039;DPN;Nahreisezug;;;;
 vrr040;DPN;Nahreisezug;;;;
-vrr045;DPN;Nahreisezug;;;;
+vrr045;DPN;Nahreisezug;;VER;Verkehrsgesellschaft Ennepe-Ruhr mbH;SB67
 vrr050;DPN;Nahreisezug;;;;
 vrr060;DPN;Nahreisezug;;;;
-vrr064;DPN;Nahreisezug;;;;
+vrr064;DPN;Nahreisezug;;WSW;WSW mobil GmbH;Schwebebahn
 vrr065;DPN;Nahreisezug;;;;
-vrr066;DPN;Nahreisezug;;;;
-vrr070;DPN;Nahreisezug;;;;
-vrr071;DPN;Nahreisezug;;;;
-vrr072;DPN;Nahreisezug;;;;
+vrr066;DPN;Nahreisezug;;WSW;WSW mobil GmbH;Busse
+vrr070;DPN;Nahreisezug;;Rheinbahn;Rheinbahn AG;U-Bahn
+vrr071;DPN;Nahreisezug;;Rheinbahn;Rheinbahn AG;Straßenbahn
+vrr072;DPN;Nahreisezug;;Rheinbahn;Rheinbahn AG;Busse
 vrr073;DPN;Nahreisezug;;;;
 vrr075;DPN;Nahreisezug;;;;
-vrr076;DPN;Nahreisezug;;;;
+vrr076;DPN;Nahreisezug;;Bahnen Monheim;Bahnen der Stadt Monheim GmbH;791,
 vrr077;DPN;Nahreisezug;;;;
 vrr080;DPN;Nahreisezug;;;;
-vrr088;BVR;Busverkehr Rheinland;;;;
-vrs001;DPN;Nahreisezug;;;;
-vrs003;DPN;Nahreisezug;;;;
-vrs006;DPN;Nahreisezug;;;;
-vrs008;DPN;Nahreisezug;;;;
-vrs011;DPN;Nahreisezug;;;;
-vrs012;DPN;Nahreisezug;;;;
-vrs013;DPN;Nahreisezug;;;;
-vrs014;DPN;Nahreisezug;;;;
-vrs016;DPN;Nahreisezug;;;;
-vrs017;DPN;Nahreisezug;;;;
+vrr088;BVR;Busverkehr Rheinland;Busverkehr Rheinland;BVR;BVR Busverkehr Rheinland GmbH;SB66,882,
+vrs001;DPN;Nahreisezug;;KVB;Kölner Verkehrs-Betriebe AG;
+vrs003;DPN;Nahreisezug;;wupsi;wupsi GmbH;
+vrs006;DPN;Nahreisezug;;SWB;Stadtwerke Bonn Verkehrs GmbH;ohne 66, 67
+vrs008;DPN;Nahreisezug;;RSVG;Rhein-Sieg-Verkehrsgesellschaft mbH;
+vrs011;DPN;Nahreisezug;;OVAG;Oberbergische Verkehrsgesellschaft mbH;
+vrs012;DPN;Nahreisezug;;RVK;Regionalverkehr Köln GmbH;Niederlassung Meckenheim
+vrs013;DPN;Nahreisezug;;RVK;Regionalverkehr Köln GmbH;Niederlassung Euskirchen
+vrs014;DPN;Nahreisezug;;RVK;Regionalverkehr Köln GmbH;Niederlassung Bergisch Gladbach
+vrs016;DPN;Nahreisezug;;RVK;Regionalverkehr Köln GmbH;Niederlassung Wermelskirchen
+vrs017;DPN;Nahreisezug;;REVG;Rhein-Erft-Verkehrsgesellschaft mbH;
 vrs021;DPN;Nahreisezug;;;;
-vrs022;DPN;Nahreisezug;;;;
-vrs023;DPN;Nahreisezug;;;;
-vrs024;DPN;Nahreisezug;;;;
+vrs022;DPN;Nahreisezug;;SVE;Stadtverkehr Euskirchen GmbH;
+vrs023;DPN;Nahreisezug;;Stadtwerke Hürth;Stadtwerke Hürth AöR;
+vrs024;DPN;Nahreisezug;;Stadtwerke Brühl;Stadtwerke Brühl Verkehrs GmbH;
 vrs025;DPN;Nahreisezug;;;;
-vrs028;DPN;Nahreisezug;;;;
-vrs029;DPN;Nahreisezug;;;;
+vrs028;DPN;Nahreisezug;;Schäfer Reisen;Karl Schäfer Omnibusreisen GmbH;
+vrs029;DPN;Nahreisezug;;Stadtwerke Wesseling;Stadtwerke Wesseling GmbH;
 vrs060;DPN;Nahreisezug;;;;
-vrs063;DPN;Nahreisezug;;;;
+vrs063;DPN;Nahreisezug;;Bahnen Monheim;Bahnen der Stadt Monheim GmbH;
+vrsSWB;DPN;Nahreisezug;;SWB;Stadtwerke Bonn Verkehrs-GmbH;vermutlich? Sind Fahrten mit type UNKNOWN, bisher auf 5, 16, 18, 132 gesehen
 vsh001;DPN;Nahreisezug;;;;
 vsh010;DPN;Nahreisezug;;;;
 vsh020;DPN;Nahreisezug;;;;
@@ -1376,7 +1389,7 @@ webEMS;DPN;Nahreisezug;;;;
 webEVB;DPN;Nahreisezug;;;;
 webFAS;DPN;Nahreisezug;;;;
 webFIS;DPN;Nahreisezug;;;;
-webFLX;DPN;Nahreisezug;;;;
+webFLX;DPN;Nahreisezug;;flexo;Verkehrsbetriebe Bachstein GmbH;flexo Baddeckenstedt
 webGEB;DPN;Nahreisezug;;;;
 webGER;DPN;Nahreisezug;;;;
 webGIE;DPN;Nahreisezug;;;;
@@ -1410,12 +1423,12 @@ webSTO;DPN;Nahreisezug;;;;
 webSVG;DPN;Nahreisezug;;;;
 webSWE;DPN;Nahreisezug;;;;
 webSWH;DPN;Nahreisezug;;;;
-webSZG;DPN;Nahreisezug;;;;
+webSZG;DPN;Nahreisezug;;;KVG mbH Braunschweig;KVG Mobilitätszentrale Salzgitter (ALT 606)
 webTMW;DPN;Nahreisezug;;;;
 webUEB;DPN;Nahreisezug;;;;
 webUET;STB;üstra Hannoversche Verkehrsbetriebe AG;;;;
 webUFF;DPN;Nahreisezug;;;;
-webVBB;DPN;Nahreisezug;;;;
+webVBB;DPN;Nahreisezug;;;Verkehrsbetriebe Bachstein GmbH;Niederlassung Salzgitter (656, 658, 660)
 webVBN;DPN;Nahreisezug;;;;
 webVBW;DPN;Nahreisezug;;;;
 webVGE;DPN;Nahreisezug;;;;
@@ -1440,14 +1453,14 @@ webXOS;WEB;Weser-Ems-Bus;;;;
 webYGO;RBB;Regionalbus Braunschweig GmbH;;;;
 webYUE;RBB;Regionalbus Braunschweig GmbH;;;;
 webYUZ;DPN;Nahreisezug;;;;
-wenBUS;DPN;Nahreisezug;;;;
+wenBUS;DPN;Nahreisezug;;;Wies Faszinatour GmbH & Co. KG;Stadtverkehr Weiden i.d.Opf. + Überlandlinien 11,12,15,16,30
 WL;RB;Kreisbahn Mansfelder Land;;;;
 wstwst;DPN;Nahreisezug;;;;
 wvvBUS;DPN;Nahreisezug;;;;
 wvvSTR;DPN;Nahreisezug;;;;
 wzlBus;DPN;Nahreisezug;;;;
 X1;erx;erixx;;;;
-X2;erx;erixx;;;;
+X2;erx;erixx;erixx - Der Harzsprinter;;;
 Y0;SCH;Adler-Schiffe;;;;
 Y8;BRB;Bayerische Regiobahn;;;;
 Z8;BZB;Bayerische Zugspitzbahn;;;;
