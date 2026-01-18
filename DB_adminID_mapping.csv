@@ -602,7 +602,7 @@ omp092;DPN;Nahreisezug;;;;
 omp093;DPN;Nahreisezug;;;;
 omp094;DPN;Nahreisezug;;;;
 omp095;DPN;Nahreisezug;;;;
-omp096;DPN;Nahreisezug;;;;"Bus 910, Flexibus KG c/o Verkehrsunternehmen RBA Regionalbus Augsburg GmbH
+omp096;DPN;Nahreisezug;;;;Bus 910, Flexibus KG c/o Verkehrsunternehmen RBA Regionalbus Augsburg GmbH
 omp098;DPN;Nahreisezug;;;;
 omp099;DPN;Nahreisezug;;;;
 omsBus;DPN;Nahreisezug;;;;
@@ -1477,3 +1477,4 @@ zvv008;DPN;Nahreisezug;;;;
 zvv018;DPN;Nahreisezug;;;;
 zvv019;DPN;Nahreisezug;;;;
 zvv041;DPN;Nahreisezug;;;;
+
