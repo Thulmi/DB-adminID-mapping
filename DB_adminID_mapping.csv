@@ -497,7 +497,8 @@ L721;SBB;SBB GmbH;;;;S6,
 L8;BRB;Bayerische Regiobahn;;;;
 lamBus;DPN;Nahreisezug;;;;
 lanGEV;DPN;Nahreisezug;;;;
-LD;TL;trilex ;TRILEX -  Die Länderbahn GmbH DLB;;;
+LD;TL;trilex;TRILEX -  Die Länderbahn GmbH DLB;;;
+LDMDSB;MDS;S-Bahn Mitteldeutschland - Die Länderbahn GmbH;S-Bahn Mitteldeutschland - Die Länderbahn GmbH;;;
 LDTL;TL;trilex - Die Länderbahn GmbH DLB;Trilex - Die Länderbahn GmbH DLB;;;
 LDTLX;TLX;trilex-express - Die Länderbahn GmbH DLB;Trilex - Die Länderbahn GmbH DLB;;;
 lklGEV;DPN;Nahreisezug;;;;Landshut: 301, 318 (Weingartner Reisen e.K.), 307 (Omnibusse Richard Petz GmbH)
