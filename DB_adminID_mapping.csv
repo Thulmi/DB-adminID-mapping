@@ -399,8 +399,8 @@ drbBUS;DPN;Nahreisezug;;;;
 E0;EVB;EVB ELBE-WESER GmbH;;;;
 E3;P;Kasbachtalbahn;;;;
 EB;RB;Erfurter Bahn GmbH;Erfurter Bahn GmbH (RB);;;
-eco001;Bus;;ecoVista im Auftrag von DB InfraGO und DB Regio;ecoVista;ecoVista e.K.;
-eco002;Bus;;ecoVista im Auftrag von DB InfraGO;ecoVista;ecoVista e.K.;
+eco001;Bus;ecoVista e.K.;ecoVista im Auftrag von DB InfraGO und DB Regio;ecoVista;ecoVista e.K.;
+eco002;Bus;ecoVista e.K.;ecoVista im Auftrag von DB InfraGO;ecoVista;ecoVista e.K.;
 ED;FEG;Freiberger Eisenbahngesellschaft;;;;
 estbus;DPN;Nahreisezug;;;;
 etgBus;DPN;Nahreisezug;;;;
@@ -630,7 +630,7 @@ omsBus;DPN;Nahreisezug;;;;
 ova002;DPN;Nahreisezug;;;;
 ova035;DPN;Nahreisezug;;;;
 ovaOVA;DPN;Nahreisezug;;;;
-ovfBAY:DPN;Nahreisezug;;RBO;Regionalbus Ostbayern GmbH;Bus 6148 Passau (Verbundtarif Donau/Wald)
+ovfBAY;DPN;Nahreisezug;;RBO;Regionalbus Ostbayern GmbH;Bus 6148 Passau (Verbundtarif Donau/Wald)
 ovfOVF;DPN;Nahreisezug;;OVF;Omnibusverkehr Franken GmbH;VGN 369 (eigentlich Heserbus?),1338,RUF 1339,1367,
 OWBus;OE;Ostdeutsche Eisenbahn GmbH;Ostdeutsche Eisenbahn GmbH (Bus);;;
 owl020;DPN;Nahreisezug;;;;
